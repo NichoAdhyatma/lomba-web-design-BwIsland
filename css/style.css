@@ -1,7 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
 
+:root {
+  --base: rgb(0, 0, 0);
+}
+
 * {
   scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: var(--base);
+}
+
+li {
+  list-style: none;
 }
 
 /* width */
@@ -16,7 +29,6 @@
   border-radius: 10px;
 }
 
-
 /*BACKGROUND*/
 #parent {
   z-index: -1;
@@ -27,7 +39,6 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../asset/bawean-photo-1.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   min-height: 100vh;
   min-width: 100vw;
   background-position: center;
@@ -66,10 +77,24 @@
 /*END-BACKGROUND*/
 
 /*NAVBAR*/
+#title-navbar {
+  font-family: "Ms Madi", cursive;
+}
 
 /*END-NAVBAR*/
 
 /*MAIN-CONTENT*/
+
+/*ABOUT-US*/
+#photo-1 {
+  background-image: url('../asset/bawean-island.jpg');
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: opacity(0.8);
+  width: 100%;
+  height: 100%;
+}
+/*END-ABOUT-US*/
 
 #main {
   max-width: 1280px;
@@ -79,7 +104,41 @@
   height: 700px;
 }
 
+.kenburns-top {
+  -webkit-animation: kenburns-top 5s ease-out infinite both;
+  animation: kenburns-top 5s ease-out infinite both;
+}
+
 /*END-MAIN-CONTENT*/
+
+@-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
 
 @-webkit-keyframes tracking-in-contract-bck-bottom {
   0% {
@@ -87,7 +146,10 @@
     -webkit-transform: translateZ(400px) translateY(300px);
     transform: translateZ(400px) translateY(300px);
     opacity: 0;
-  }
+    -moz-transform: translateZ(400px) translateY(300px);
+    -ms-transform: translateZ(400px) translateY(300px);
+    -o-transform: translateZ(400px) translateY(300px);
+}
   40% {
     opacity: 0.6;
   }
