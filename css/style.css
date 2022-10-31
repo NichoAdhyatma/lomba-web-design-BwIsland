@@ -96,7 +96,7 @@ li {
 
 /*ABOUT-US*/
 #photo-1 {
-  background-image: url('../asset/bawean-island.jpg');
+  background-image: url("../asset/bawean-island.jpg");
   background-position: center;
   background-size: cover;
   backdrop-filter: opacity(0.8);
@@ -164,7 +164,7 @@ li {
     -moz-transform: translateZ(400px) translateY(300px);
     -ms-transform: translateZ(400px) translateY(300px);
     -o-transform: translateZ(400px) translateY(300px);
-}
+  }
   40% {
     opacity: 0.6;
   }
@@ -188,5 +188,35 @@ li {
     -webkit-transform: translateZ(0) translateY(0);
     transform: translateZ(0) translateY(0);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes svg-text-anim {
+  40% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  60% {
+    stroke-dashoffset: 0;
+    fill: #ffffff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #ffffff;
+  }
+}
+/* Most browsers */
+@keyframes svg-text-anim {
+  40% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  60% {
+    stroke-dashoffset: 0;
+    fill: #ffffff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #ffffff;
   }
 }
