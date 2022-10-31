@@ -17,6 +17,10 @@ li {
   list-style: none;
 }
 
+#app {
+  width: 100%;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
@@ -65,7 +69,6 @@ li {
 
 .particles-js-canvas-el {
   min-height: 100vh;
-  min-width: 100vh;
 }
 
 .tracking-in-contract-bck-bottom {
@@ -80,6 +83,7 @@ li {
 
 #navbar {
   background-color: rgb(44, 111, 218);
+  overflow: hidden;
 }
 
 #title-navbar {
@@ -107,7 +111,8 @@ li {
 
 #main {
   max-width: 1280px;
-  margin-top: 100px;
+  margin-top: 20px;
+  margin: 20px auto;
 }
 
 .content {
