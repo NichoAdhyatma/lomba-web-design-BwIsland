@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/loader.css" />
+    <link rel="stylesheet" href="./css/wave.css" />
     <title>Bawean</title>
   </head>
   <body>
@@ -24,12 +25,7 @@
     <div id="app">
       <!--BACKGROUND-->
       <div id="parent">
-        <div
-          data-aos="zoom-out"
-          data-aos-duration="1000"
-          id="particles-js"
-          class="kenburns-top"
-        ></div>
+        <div id="particles-js"></div>
       </div>
 
       <h1
@@ -41,7 +37,12 @@
       <!--END-BACKGROUND-->
 
       <!--NAVBAR-->
-      <nav class="navbar navbar-expand-lg bg-light">
+
+      <nav
+        data-aos="fade-up"
+        id="navbar"
+        class="navbar navbar-expand-lg navbar-dark sticky-top"
+      >
         <div class="container-fluid">
           <a id="title-navbar" class="navbar-brand fw-bold" href="#"
             >Bawean Island</a
@@ -63,10 +64,10 @@
                 <a class="nav-link" href="#about">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Destination</a>
+                <a class="nav-link" href="#destination">Destination</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Hotel & Resort</a>
+                <a class="nav-link" href="#hotel">Hotel & Resort</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -86,7 +87,7 @@
           <h1 class="text-center">DISCOVER BAWEAN ISLAND</h1>
           <div class="row justify-content-center mt-5">
             <div class="col-md-4">
-              <img src="./asset/bawean-island.jpg" class="w-100" alt="img-2">
+              <img src="./asset/bawean-island.jpg" class="w-100" alt="img-2" />
             </div>
             <div class="col-md-4">
               <article>
@@ -101,12 +102,13 @@
             </div>
           </div>
         </div>
-        <div id="about" data-aos="fade-right" class="container mt-5">
+
+        <div id="destination" data-aos="fade-right" class="container mt-5">
           <h1 class="text-center">DESTINATION</h1>
           <div class="row justify-content-center mt-5">
             <div class="col-md-4">
               <article>
-                <h4>BAWEAN</h4>
+                <h4>DESTINATION BAWEAN</h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Magnam impedit culpa perspiciatis eius harum quasi
@@ -121,11 +123,11 @@
           </div>
         </div>
 
-        <div id="about" data-aos="fade-left" class="container mt-5">
+        <div id="hotel" data-aos="fade-left" class="container mt-5">
           <h1 class="text-center">HOTEL & RESORT</h1>
           <div class="row justify-content-center mt-5">
             <div class="col-md-4">
-              <img src="./asset/bawean-island.jpg" class="w-100" alt="img-3">
+              <img src="./asset/bawean-island.jpg" class="w-100" alt="img-3" />
             </div>
             <div class="col-md-4">
               <article>
@@ -214,12 +216,43 @@
         </div>
         <!--END-CONTENT-CONTACT-->
       </div>
-
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      
+      <svg
+        width="100%"
+        height="100%"
+        id="svg"
+        viewBox="0 0 1440 600"
+        xmlns="http://www.w3.org/2000/svg"
+        class="transition duration-300 ease-in-out delay-150"
+      >
+        >
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
+            <stop offset="5%" stop-color="#002bdc"></stop>
+            <stop offset="95%" stop-color="#32ded4"></stop>
+          </linearGradient>
+        </defs>
         <path
-          fill="#f3f4f5"
+          d="M 0,600 C 0,600 0,200 0,200 C 100.02870813397132,208.1818181818182 200.05741626794264,216.36363636363635 287,224 C 373.94258373205736,231.63636363636365 447.7990430622009,238.72727272727272 546,226 C 644.2009569377991,213.27272727272728 766.7464114832535,180.72727272727275 884,187 C 1001.2535885167465,193.27272727272725 1113.2153110047846,238.36363636363635 1205,247 C 1296.7846889952154,255.63636363636365 1368.3923444976076,227.8181818181818 1440,200 C 1440,200 1440,600 1440,600 Z"
+          stroke="none"
+          stroke-width="0"
+          fill="url(#gradient)"
+          fill-opacity="0.53"
+          class="transition-all duration-300 ease-in-out delay-150 path-0"
+        ></path>
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
+            <stop offset="5%" stop-color="#002bdc"></stop>
+            <stop offset="95%" stop-color="#32ded4"></stop>
+          </linearGradient>
+        </defs>
+        <path
+          d="M 0,600 C 0,600 0,400 0,400 C 97.49282296650719,403.24401913875596 194.98564593301438,406.4880382775119 301,427 C 407.0143540669856,447.5119617224881 521.5502392344497,485.2918660287081 627,462 C 732.4497607655503,438.7081339712919 828.8133971291867,354.3444976076555 916,331 C 1003.1866028708133,307.6555023923445 1081.1961722488038,345.33014354066984 1167,367 C 1252.8038277511962,388.66985645933016 1346.401913875598,394.3349282296651 1440,400 C 1440,400 1440,600 1440,600 Z"
+          stroke="none"
+          stroke-width="0"
+          fill="url(#gradient)"
           fill-opacity="1"
-          d="M0,32L48,74.7C96,117,192,203,288,208C384,213,480,139,576,90.7C672,43,768,21,864,48C960,75,1056,149,1152,170.7C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          class="transition-all duration-300 ease-in-out delay-150 path-1"
         ></path>
       </svg>
       <!--END-CONTENT-->

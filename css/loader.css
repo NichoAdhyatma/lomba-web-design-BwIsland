@@ -5,7 +5,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(168, 208, 230);
   z-index: 100;
   display: flex;
   align-items: center;
@@ -72,7 +72,9 @@
   transform: translateZ(calc(var(--box-size) / 2));
 }
 .social-btns .bottom {
-  background-color: hsl(332, 75%, 55%);
+  background-color: hsl(214, 75%, 55%);
   color: hsl(0, 0%, 97%);
   transform: translateY(50%) rotateX(-90deg);
 }
+
+

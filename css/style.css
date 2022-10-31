@@ -31,25 +31,25 @@ li {
 
 /*BACKGROUND*/
 #parent {
-  z-index: -1;
   overflow: hidden;
+  z-index: -1;
 }
 
 #particles-js {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../asset/bawean-photo-1.jpg");
   background-repeat: no-repeat;
-  min-height: 100vh;
-  min-width: 100vw;
   background-position: center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 #title {
-  max-width: 50%;
+  max-width: 70%;
   height: 100px;
   position: absolute;
   left: 0;
@@ -77,6 +77,11 @@ li {
 /*END-BACKGROUND*/
 
 /*NAVBAR*/
+
+#navbar {
+  background-color: rgb(44, 111, 218);
+}
+
 #title-navbar {
   font-family: "Ms Madi", cursive;
 }
@@ -96,8 +101,13 @@ li {
 }
 /*END-ABOUT-US*/
 
+#hotel {
+  background: none;
+}
+
 #main {
   max-width: 1280px;
+  margin-top: 100px;
 }
 
 .content {
@@ -105,8 +115,8 @@ li {
 }
 
 .kenburns-top {
-  -webkit-animation: kenburns-top 5s ease-out infinite both;
-  animation: kenburns-top 5s ease-out infinite both;
+  animation: kenburns-top 1s ease-out 1 both;
+  -webkit-animation: kenburns-top 1s ease-out 1 both;
 }
 
 /*END-MAIN-CONTENT*/
