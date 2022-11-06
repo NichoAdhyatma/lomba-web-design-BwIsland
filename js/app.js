@@ -6,12 +6,12 @@ AOS.init();
 window.addEventListener("load", () => {
   const preloader = document.querySelector(".js-preloader");
   const app = document.querySelector("#app");
-
   app.style.display = "none";
 
   setTimeout(() => {
     preloader.classList.add("fade-out");
     app.style.display = "block";
+
     // preloader.style.display="none";
   }, 1500);
 

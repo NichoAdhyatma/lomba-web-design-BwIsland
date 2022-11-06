@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 :root {
   --base: rgb(0, 0, 0);
+  --blue: #5DA7DB;
 }
 
 * {
   scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -21,10 +24,15 @@ li {
   width: 100%;
 }
 
+.preloader {
+  z-index: 10;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
+  overflow-x: hidden;
 }
 
 /* Handle */
@@ -32,6 +40,7 @@ li {
   background: rgb(155, 153, 153);
   border-radius: 10px;
 }
+
 
 /*BACKGROUND*/
 #parent {
@@ -53,7 +62,7 @@ li {
 }
 
 #title {
-  max-width: 70%;
+  max-width: 40%;
   height: 100px;
   position: absolute;
   left: 0;
@@ -64,6 +73,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   font-family: "Ms Madi", cursive;
 }
 
@@ -82,8 +92,41 @@ li {
 /*NAVBAR*/
 
 #navbar {
-  background-color: rgb(44, 111, 218);
-  overflow: hidden;
+  background-color: var(--blue);
+  color: white;
+  padding: 0.5rem;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo h3 {
+  margin: 0;
+}
+
+#navbar-container {
+  max-width: 80rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+#navbar-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  gap: 10%;
+  margin-right: 30px;
+}
+
+#navbar-items li a {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2
 }
 
 #title-navbar {
@@ -105,14 +148,12 @@ li {
 }
 /*END-ABOUT-US*/
 
-#hotel {
-  background: none;
-}
-
 #main {
+  width: 100%;
   max-width: 1280px;
   margin-top: 20px;
   margin: 20px auto;
+  padding: 20px;
 }
 
 .content {
@@ -125,6 +166,16 @@ li {
 }
 
 /*END-MAIN-CONTENT*/
+
+/*MEDIA QUERY */
+
+@media only screen and (max-width: 576px) {
+  #navbar-items {
+    display: none;
+  }
+}
+
+/*END MEDIA QUERY */
 
 @-webkit-keyframes kenburns-top {
   0% {
