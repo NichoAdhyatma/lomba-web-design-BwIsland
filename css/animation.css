@@ -1,42 +1,27 @@
-#container {
-  width: 600px;
+.typing {
+  position: relative;
 }
-#container.fin .path-1, #container.fin .path-2, #container.fin .path-3 {
-  stroke-dashoffset: 0;
-}
-#container.fin .path-4 {
-  stroke-width: 18px;
-}
-
-.path {
-  fill: none;
-  stroke: #362f3c;
-  stroke-width: 18px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.typing::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  color: white;
+  background: #1d1f20;
+  animation: typing 4s steps(16) forwards, caret 1s infinite;
 }
 
-.path-1 {
-  stroke-dasharray: 1850 2000;
-  stroke-dashoffset: 1851;
-  transition: 5s linear;
+@keyframes typing {
+  to {
+    width: 0;
+  }
+}
+@keyframes caret {
+  50% {
+    color: transparent;
+  }
 }
 
-.path-2 {
-  stroke-dasharray: 260 1000;
-  stroke-dashoffset: 261;
-  transition: 1.2s linear 5.2s;
-}
 
-.path-3 {
-  stroke-dasharray: 100 1000;
-  stroke-dashoffset: 101;
-  transition: 1s linear 6.5s;
-}
-
-.path-4 {
-  stroke-width: 0;
-  transition: 0.1s linear 7.5s;
-}
 
 /*# sourceMappingURL=animation.css.map */

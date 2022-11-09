@@ -3,7 +3,7 @@
 
 :root {
   --base: rgb(0, 0, 0);
-  --blue: #5da7db;
+  --blue: #206be3;
 }
 
 * {
@@ -26,6 +26,10 @@ li {
 
 .preloader {
   z-index: 10;
+}
+
+.landing-text {
+  font-size: 1rem;
 }
 
 /*carousel*/
@@ -62,7 +66,7 @@ li {
 
 #particles-js {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../asset/bawean-photo-1.jpg");
+    url("../asset/bg-landing.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -104,9 +108,8 @@ li {
 /*NAVBAR*/
 
 #navbar {
-  background-color: var(--blue);
-  color: white;
   padding: 0.5rem;
+  background-color: #fff;
 }
 
 #logo {
@@ -136,7 +139,6 @@ li {
 }
 
 #navbar-items li a {
-  color: white;
   font-size: 1.5rem;
   line-height: 2;
 }

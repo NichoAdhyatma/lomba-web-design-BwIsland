@@ -1,0 +1,27 @@
+$bg: #1d1f20;
+$text-color: #d7b94c;
+$caret-color: white;
+$text-length: 16;
+$animation-time: 4s;
+
+.typing {
+  position: relative;
+	&::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    color: $caret-color;
+    background: $bg;
+    animation: typing $animation-time steps($text-length) forwards,
+      caret 1s infinite;
+  }
+}
+// Animation
+@keyframes typing {
+	to { width: 0 }
+}
+@keyframes caret {
+	50% { color: transparent }
+}
+
