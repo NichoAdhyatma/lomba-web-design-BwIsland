@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/loader.css" />
     <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/navbar.css">
     <title>Bawean</title>
   </head>
   <body>
@@ -122,13 +123,43 @@
       <!--END-BACKGROUND-->
 
       <!--NAVBAR-->
-      <nav id="navbar" class="sticky-top">
-        <div id="navbar-container">
-          <div id="logo"><h3>BwIsland</h3></div>
-          <ul id="navbar-items">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Destination</a></li>
+      <nav class="navbar navbar-expand-custom navbar-mainbg sticky-top">
+        <a id="title-navbar" class="navbar-brand navbar-logo" href="#">Bawean Island</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <div class="hori-selector">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link active" href="javascript:void(0);"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);"
+                >Destination</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);"
+                >Hotel & Resort</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
