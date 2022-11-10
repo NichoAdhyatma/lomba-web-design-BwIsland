@@ -101,7 +101,6 @@ i {
     left: -25px;
 }
 
-
 @media(min-width: 992px){
 	.navbar-expand-custom {
 	    -ms-flex-flow: row nowrap;
