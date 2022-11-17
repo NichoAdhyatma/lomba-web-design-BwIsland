@@ -88,6 +88,10 @@ li {
   border-radius: 10px;
 }
 
+.background {
+  min-height: 0 !important;
+}
+
 /*BACKGROUND*/
 #parent {
   overflow: hidden;
