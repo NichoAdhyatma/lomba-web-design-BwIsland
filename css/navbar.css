@@ -373,3 +373,7 @@ i {
     left: -25px;
   }
 }
+
+li a {
+  color: rgb(64, 47, 177) !important;
+}
